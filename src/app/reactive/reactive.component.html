@@ -1,0 +1,30 @@
+<div class="card card-block container text-center">
+  <h4 class="card-title">Create Blog -> Reactive Demo</h4> 
+  <h3>Form : {{blogform.value | json}}</h3>
+  <h3>Blog : {{blogform.status | json}}</h3>
+  <form [formGroup]='blogform' novalidate
+  (ngSubmit)='submit(blogform.value)'>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter the title" 
+      formControlName = 'title' [class.is-invalid]='title.invalid && title.touched'/>
+      <div class="form-control-feedback" 
+	*ngIf="title.errors && (title.dirty || title.touched)"> 
+<p *ngIf="title.errors.required" class='text-danger'>Title is required</p> 
+<p *ngIf="title.errors.minlength">Title should be of 5 characters atleast</p> 
+</div>
+
+    </div>
+    <div class="form-group"> 
+      <input type="text" class="form-control" placeholder="Enter the descitpion"
+      formControlName = 'desc' [class.is-invalid]='desc.invalid && desc.touched'/>
+      <div class="form-control-feedback" 
+	*ngIf="desc.errors && (desc.dirty || desc.touched)"> 
+<p *ngIf="desc.errors.required">Description is required</p> 
+</div>
+    </div>
+    <button type="submit" class="btn btn-secondary"
+    [disabled]='blogform.invalid'>Create</button>
+  </form>
+  <!-- <input type="text" [formControl] = 'name'/> -->
+</div>
+  

@@ -1,0 +1,46 @@
+<h1 [attr.role]='heading'>Welcome to Training from TechGatha ARIA</h1>
+<p id='p1'>You are just close to upgrade yourseleves to one of the most amazing framework in demand. 
+    Be patient, consistent and pratice practice practice. 
+   <br> Practice is the only key to success.<br> 
+    You remember when you do, but you only
+     learn when you listen or watch. </p>
+
+<div id='main'>
+    <!-- string interpolation-->
+    <h1 [style.color]='randomcolor'>{{course}}</h1>
+    
+    <div>
+       
+    <form>
+        <!-- <div>Name : <input type="text" [value]='course' (input)='course=$event.target.value'/></div> -->
+        <div>Name : <input type="text" [(ngModel)]='course' name='c'/></div>
+        <div>
+            <button (click)='setColor()'>Click</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+<!---style binding for colors -->
+<!-- <h2>Style Binding using 'style.color' directive</h2> -->
+<!--call the random color property to set the color of this div -->
+<!-- <div [style.color]="randomcolor" [style.backgroundColor]="'black'"> I would be styled with different colors dynamically </div>
+<div [ngStyle]="{'color':randomcolor, 'background-color':'black','font-size':'32px'}"> I would be styled with different colors dynamically </div> -->
+<!---class binding for colors -->
+<!-- <h2>Class Binding using 'class' directive</h2>
+
+<div [class]="'br'"> I would be styled with [class]  </div>
+<div [class]="style1"> I would be styled with [class] </div>
+<div [class.failure]='hasError'> I would be styled with [class.style] </div> -->
+<!---class binding for colors -->
+<!-- <h2>Class Binding using ngClass' directive</h2>
+
+<div [ngClass]="['s1','special']"> I would be styled with [ngClass] different colors dynamically </div>
+<div [ngClass]="msgs"> I would be styled with [ngClass] different colors dynamically </div> -->
+
+
+</div>

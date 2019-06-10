@@ -1,0 +1,49 @@
+h1{
+    background-color:crimson;
+    border: 1px solid darkcyan;
+    padding:20px;
+    text-align: center;
+    margin: 0px;
+}
+#p1{
+    color:brown;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+
+}
+#main{
+    background-color: chocolate;
+    height: 800px;
+    margin:0px;
+    padding:30px;
+    text-align: center;
+}
+button{
+    padding: 20px;
+    font-size: 25px;
+    width:150px;
+    background-color: bisque;
+    margin-top: 20px;
+}
+.br{
+    border:2px solid crimson;
+}
+.s1{
+    color:green;
+    font-size: 30px;
+}
+.success{
+    background-color: green;
+}
+
+.failure{
+    background-color: red;
+}
+
+.special{
+    /*background-color:hotpink;*/
+    border-top:5px solid crimson;
+}
