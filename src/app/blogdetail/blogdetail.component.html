@@ -1,0 +1,48 @@
+<div class="container">
+    <h3>Blog Details</h3>
+    <div class="row">
+    <div class="col-md-3">
+    <p>Blog Id : </p>
+    </div>
+    <div class="col-md-9">
+    <p>{{blog?.id}}</p>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+        <p>Blog Category : </p>
+        </div>
+        <div class="col-md-9">
+        <p>{{blog?.category}}</p>
+        </div>
+        </div>
+    <div class="row">
+    <div class="col-md-3">
+    <p>Blog Title : </p>
+    </div>
+    <div class="col-md-9">
+    <p>{{blog?.title}}</p>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-3">
+    <p>Blog Description : </p>
+    </div>
+    <div class="col-md-9">
+    <p>{{blog?.description}}</p>
+    </div>
+    </div>
+    <div class="links">
+        <a (click)="prev()">Previous</a>
+        <a (click)="next()">Next</a>
+        </div>
+        <div class="blinks">
+        <a (click)="back()">Back</a>
+        </div>
+        <p class="blinks">
+        <a (click)="info()">Show Info</a>
+        </p>
+        <router-outlet></router-outlet>
+        </div>
+        
+    

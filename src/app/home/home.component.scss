@@ -1,0 +1,33 @@
+/*h1{
+    background-color:crimson;
+    border: 1px solid darkcyan;
+    padding:20px;
+    text-align: center;
+    margin: 0px;
+}*/
+#p1{
+    color:brown;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 18px;
+}
+h3{
+    text-align: center;
+    padding: 20px;
+    color:rgb(104, 2, 111);
+    display: block;
+    position: relative; 
+}
+h3::after{
+    background: url(/assets/bg1.jpeg);
+        opacity: 0.7;
+        z-index: -1;
+        content: "";
+        top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}

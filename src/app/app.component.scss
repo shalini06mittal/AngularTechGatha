@@ -1,0 +1,21 @@
+#main{
+    background-color: chocolate;
+    height: 800px;
+    margin:0px;
+    padding:30px;
+    text-align: center;
+}
+p{
+    font-style: italic;
+}
+a{
+    background-color: rgb(104, 2, 111);;
+  color: white;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+    margin-left: 5px;
+}
+.active{
+  background-color: black;
+}

@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Database - dbdemo.js
+
+Please install mysql driver using the command
+npm install mysql --save
+
+Also change the mysql configurations to your DB credentials and locations i.e  change the following
+ host: "localhost",
+  user: "root",
+  password: "root",
+  port:8889,
+  database:"angular" 
+
+## JWT - blogroutes.js
+
+To create json web tokens do install the module using the fllwoing command:
+npm install jsonwebtoken --save
+

@@ -1,0 +1,37 @@
+<div id='list'>
+  <h1 style=" text-align: center;">List Of Blogs</h1>
+  <div>
+    <p>Select a Category : 
+        <select [(ngModel)]='cat' name='category'>
+            <option value="all">All</option>
+            <option *ngFor='let category of categories' value="{{category}}">
+                {{category}}
+            </option>
+        </select>
+    </p>
+    <!-- <button (click)='addBlog()'>Add Blog</button> -->
+  </div>
+  <div *ngFor='let blog of bloglist | async | category:cat'>
+    <div>
+      <app-blog [blog] = 'blog'></app-blog>
+    </div>
+    <div class="row">
+      <div class="col-md-3 text-left">
+          <button (click)="onselect(blog)" 
+          [class.selected]='isselected(blog)'>Read</button>
+      </div>
+      <div class="col-md-9 text-right">
+      <button (click)="delete(blog)">Delete</button>
+      <button (click)="edit(blog)">Edit</button>
+    </div>
+  </div> 
+  <!-- <div *ngFor='let blog of blogs | category:cat'>
+    <div>
+      <app-blog [blog] = 'blog'></app-blog>
+      <button (click)="delete(blog)">Delete</button>
+      <button (click)="edit(blog)">Edit</button>
+    </div>
+  </div>  -->
+
+</div>
+

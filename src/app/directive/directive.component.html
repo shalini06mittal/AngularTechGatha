@@ -1,0 +1,18 @@
+<h1>Directives demo</h1>>
+<h2 *ngIf='choice'>This is displayed if choice is true</h2>
+<h2 *ngIf='!choice'>This is not displayed if choice is true</h2>
+<div *ngFor = 'let p of [1,2,3,4,5]'>
+  <div>{{p}}</div>
+
+</div>
+<ul>
+  <li  *ngFor = 'let n of nos'>{{n}}</li>
+</ul>
+
+<ul>
+    <div *ngFor = 'let p1 of people' [ngSwitch]='p1.country'>
+    <li *ngSwitchCase="'UK'" class='uk'>{{p1.name}} -> {{p1.country}}</li>  
+    <li *ngSwitchCase="'USA'" class=usa>{{p1.name}} -> {{p1.country}}</li>  
+    <li *ngSwitchDefault class='def'>{{p1.name}} -> {{p1.country}}</li>  
+  </div>
+  </ul>
